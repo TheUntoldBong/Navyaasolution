@@ -11,7 +11,7 @@ export function FloatingActions() {
   const items = [
     { href: "https://wa.me/919830247883", label: "WhatsApp", Icon: MessageCircle, bg: "bg-[oklch(0.66_0.17_145)]" },
     { href: "tel:+919830247883", label: "Call", Icon: Phone, bg: "bg-primary" },
-    { href: "mailto:info@chemii-synth.co.in", label: "Email", Icon: Mail, bg: "bg-dark" },
+    { href: "mailto:navyaasolutions@gmail.com", label: "Email", Icon: Mail, bg: "bg-dark" },
   ];
   return (
     <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
