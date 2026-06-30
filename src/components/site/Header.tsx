@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Mail, Phone, Menu, X, Sparkles, Facebook, Linkedin, Instagram, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -51,9 +52,11 @@ export function Header() {
       <div className={`transition-all duration-300 ${scrolled ? "glass shadow-soft" : "bg-background/90 backdrop-blur"}`}>
         <div className="mx-auto max-w-7xl container-px flex h-18 items-center justify-between py-3">
           <Link to="/" className="flex items-center gap-2.5 group">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-primary text-white shadow-glow">
-              <Sparkles className="h-5 w-5" />
-            </span>
+            <img
+  src={logo}
+  alt="Navyaa Solutions"
+  className="h-14 w-auto object-contain"
+/>
             <span className="flex flex-col leading-tight">
               <span className="text-lg font-bold tracking-tight">Navyaa Solutions</span>
               <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">DELIVERING TRUST EVERYTIME</span>
